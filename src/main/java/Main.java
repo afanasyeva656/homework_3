@@ -16,14 +16,26 @@ public class Main {
             e.printStackTrace();
         }
 
+        // Вхождение слова страдание
         int wordCount = getWordCount("страдани[иеяй].?", list);
         System.out.println("Число вхождений слова 'страдание': " + wordCount);
 
+        // Использование Scanner
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите слово для поиска:");
         String string = scanner.nextLine();
         wordCount = getWordCount(string, list);
         System.out.println("Число вхождений слова '" + string + "': " + wordCount);
+
+
+        // Вывод таблицы умножения
+        System.out.println("Вывод таблицы умножения: ");
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.print(i*j + " ");
+            }
+            System.out.println("");
+        }
     }
 
 
