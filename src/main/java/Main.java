@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,6 +19,11 @@ public class Main {
         int wordCount = getWordCount("страдани[иеяй].?", list);
         System.out.println("Число вхождений слова 'страдание': " + wordCount);
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите слово для поиска:");
+        String string = scanner.nextLine();
+        wordCount = getWordCount(string, list);
+        System.out.println("Число вхождений слова '" + string + "': " + wordCount);
     }
 
 
